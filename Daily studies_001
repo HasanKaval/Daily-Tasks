@@ -49,3 +49,34 @@ slicer(1, 2, 3, 4, 5, 6, 7, 8, 9)
 print()
 
 slicer1(1, 2, 3, 4, 5, 6, 7, 8, 9)
+
+print()
+
+# use of **kwargs
+def organizer(**kwargs) :
+  names =[]
+  ages = []
+  for i in kwargs.keys():
+    names.append(i)
+  for j in kwargs.values():
+    ages.append(j)
+  print("Names : ", names,"\n")
+  print("Ages : ", ages)
+   
+organizer(Beth = 26, Oscar = 42, Justin = 18, Frank = 33)
+
+print()
+
+# use of lambda function
+
+text = "Clarusway"
+m = (lambda x : x[::-1])(text)
+print(m)
+
+print()
+
+# use of lambda function + ternary operator
+
+list_1 = [1, 2, 3, 4]
+for x in list_1:
+  print(x, ":", (lambda a : "even" if a % 2 ==0 else "odd")(x))
