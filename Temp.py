@@ -119,14 +119,4 @@ else :
 
 #Write a Python code that counts how many vowels and constants a string has that a user entered.
 
-word = (input("Please enter a word"))
-vowels = [a, e, i, o, u]
-v_counter = 0
-c_counter = 0
-for i in word:
-  for j in vowels:
-    if i == j :
-      v_counter +=1
-    else :
-      c_counter +=1
-print("Your word", word, "has", v_counter, "vowels and", c_counter, "constants." )
+
