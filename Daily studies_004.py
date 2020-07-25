@@ -7,3 +7,19 @@ def parrot_trouble(talking, hour) :
     else :
         return False
 print(parrot_trouble(True, 5))
+print()
+
+#Define a function to take a word and return negative meaning.
+#Given a word, return a new word where "not " has been added to the front.
+#However, if the word already begins with "not", return the string unchanged.
+
+def not_string(word):
+    x = slice(0,3)
+    if word[x] == "not" :
+        return(word)
+    else :
+        return("not " + word)
+print(not_string('not bad'))
+print()
+
+
