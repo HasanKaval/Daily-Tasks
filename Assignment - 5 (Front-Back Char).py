@@ -1,4 +1,5 @@
-def front_back(word) :
+#version 1
+def front_back1(word) :
     if len(word) > 1 :
         words = list(word)
         words.insert(0, words.pop(len(words)-1))
@@ -8,6 +9,15 @@ def front_back(word) :
     else :
         return word
 
-print(front_back('clarusway'))
-print(front_back('a'))
-print(front_back('ab'))
+print(front_back1('clarusway'))
+print(front_back1('a'))
+print(front_back1('ab'))
+
+print()
+
+#version 2
+
+def front_back2(word) :
+    liste = list(word)
+    liste[0], liste[(len(word)-1)] = liste[(len(word)-1)], liste[0]
+    return "".join(liste)
