@@ -1,3 +1,7 @@
+''' This functions decorates your message '''
+
+
+
 def printer(func) :
     def wrap() :
         print()
